@@ -1,0 +1,25 @@
+<ion-header-bar class="bar-assertive bar-main" align-title="left">
+  <div class="title title-left header-item" style="font-family:cursive;">Zmdi cheatsheet</div>
+</ion-header-bar>
+<ion-view>
+    <ion-content style="top:68px;background:#f9f9f9">
+        <!-- <div class="card" style="margin-bottom:0;margin-top:5px;" ng-repeat="icon in icons"> -->
+			<div class="item subject item-icon-left" style="margin:0;" ng-repeat="icon in icons" ng-click="viewIcon()" ripple>
+			  <i class="icon zmdi" ng-class="'zmdi-'+icon.name" style="width:5px;left:20px;" auto-bg type="{{session.type}}"></i>
+			  <h2>{{icon.name}}</h2>
+			  <h3>
+			  	{{icon.code}}
+
+			  	<style>
+			  		.some-case::after{
+			  			content: 'f101';
+			  		}
+			  	</style>
+			  	<!-- <span class="zmdi some-case"></span> -->
+			  </h3>
+			  <!-- <span class="item-note">{{session.venue}}</span> -->
+			</div>
+		<!-- </div> -->
+		<div style="height:35px;background:transparent"></div>
+    </ion-content>
+</ion-view>
